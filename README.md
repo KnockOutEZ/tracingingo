@@ -1,31 +1,36 @@
-# Understanding Program Behavior with Tracing
+# Tracing in Go - From ৭-৮-৯ টেক আড্ডা Talk
 
-This repository contains example code demonstrating how to use tracing to understand and improve program performance. We'll explore how tracing can reveal both what is and isn't happening in your program during execution.
+This repository contains the example code and materials from the tracing presentation given at ৭-৮-৯ টেক আড্ডা. The talk demonstrates how to use tracing to understand and improve program performance, using a practical example of processing RSS news feeds.
 
-## Overview
+## Talk Overview
 
-We use a simple RSS feed processor as our example application. The program searches through multiple XML files for specific terms, demonstrating common performance challenges in real-world applications.
+We explore how tracing can help developers:
+- Visualize program behavior
+- Identify performance bottlenecks
+- Understand resource utilization
+- Make data-driven optimization decisions
 
-## Getting Started
+## Example Application
 
-### Prerequisites
-- Go 1.11 or later
-- Chrome browser (required for viewing traces)
+The repository includes `main.go`, a program that:
+- Searches through RSS news feeds for specific terms
+- Demonstrates common performance patterns
+- Shows how tracing can guide optimization
 
 ### Running the Example
 
 1. Clone this repository
 2. Build the program:
 ```bash
-go build
+go build main.go
 ```
 
 3. Run with tracing enabled:
 ```bash
-tracingingo./ > trace.out
+tracingingo > trace.out
 ```
 
-4. View the trace:
+4. View the trace (requires Chrome browser):
 ```bash
 go tool trace trace.out
 ```
@@ -50,6 +55,14 @@ Key points to observe in the traces:
 - Goroutine states (running, blocked, waiting)
 - Memory allocation patterns
 - CPU utilization across available cores
+
+## Following Along
+
+The code is structured to follow the presentation flow:
+1. Start with a basic sequential implementation
+2. Use tracing to identify bottlenecks
+3. Explore optimizations through concurrent implementation
+4. Compare performance improvements
 
 ## Additional Resources
 

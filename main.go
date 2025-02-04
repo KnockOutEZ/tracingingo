@@ -89,8 +89,8 @@ func main() {
 	}
 
 	searchTerm := "Read"
-	//matches := searchSequential(searchTerm, filePaths)
-	matches := searchConcurrent(searchTerm, filePaths)
+	matches := searchSequential(searchTerm, filePaths)
+	// matches := searchConcurrent(searchTerm, filePaths)
 
 	log.Printf("Found %q %d times in %d files", searchTerm, matches, len(filePaths))
 }
