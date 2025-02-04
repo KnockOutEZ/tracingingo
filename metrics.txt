@@ -1,0 +1,10 @@
+Performance Metrics
+──────────────────────────────────────────────────
+Metric          │ Sequential │ Concurrent 
+──────────────────────────────────────────────────
+Total Runtime   │   0ms   │   0 (ms)   
+Peak Memory     │   0Mib   │   0 (Mib)   
+GC Cycles       │    0     │    0     
+Wall Time       │   0ms   │   0 (ms)
+GC Time %       │   0 (%)    │   0 (%)    
+──────────────────────────────────────────────────
